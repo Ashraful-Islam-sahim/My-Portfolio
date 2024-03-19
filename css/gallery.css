@@ -1,0 +1,125 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header style start */
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --txt-color-black: #000;
+    --txt-color: #04C3FF;
+    --txt-color2: #08b0e4;
+    --txt-color3: #464b4e;
+    --bg-color: #252F36;
+    --white: #fff;
+    --f-w:600;
+    --f-s:2.5rem;
+    --trasition5: .5s ease-in-out;
+    --trasition4: .4s ease-in-out;
+    --trasition3: .3s ease-in-out;
+    --trasition2: .2s ease-in-out;
+}
+
+
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
+    text-align: center;
+    font-weight:  var(--f-w);
+    color: var(--bg-color);
+    margin-bottom: 30px;
+
+}
+
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid var(--txt-color2);
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--txt-color2);
+
+}
+
+/* .btn-default:active .filter-button:active
+{
+    background-color: var(--txt-color2);
+    color: white;
+} */
+.filter-button.active {
+    background-color: var(--txt-color2);
+    color: white;
+}
+
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+/* portfolio gallery style part start */
+.gall-card{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 28px;
+    border: 2px solid var(--txt-color3);
+    cursor: pointer;
+}
+.gall-con h6{
+    color: var(--txt-color2);
+    font-weight: var(--f-w);
+}
+.gall-con p{
+    color: var(--txt-color3);
+}
+.gall-con h4{
+    transition:var(--trasition4);
+}
+/* hover part  */
+ .gall-con h4:hover{
+    color: var(--txt-color2);
+}
+.gal-img{
+    width:100%;
+    overflow: hidden;
+}
+.gal-img img{
+    transition: var(--trasition5);
+    width: 100%;
+}
+.gall-card img:hover{
+    transform: scale(1.5);
+}
+.gall-card:hover img{
+    transform: scale(1.5);
+}
+.gall-con h4 i{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: var(--trasition5);
+    color: var(--txt-color2);
+
+}
+.gall-con h4:hover i{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+/* portfolio gallery style part end */
